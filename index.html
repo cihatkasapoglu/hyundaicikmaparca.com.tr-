@@ -3,92 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hyundai accent blue çıkma parça ve sandık motor - cihat hyundai</title>
-    <meta name="description" content="hyundai accent blue kaporta, motor ve mekanik yedek parçaları. ankara ostim merkezli depomuzdan türkiye'nin her yerine yedek parça gönderimi.">
+    <title>cihat hyundai çıkma parça - ostim sandık motor ve mekanik yedek parça</title>
+    <meta name="description" content="ankara ostim merkezli hyundai ve kia çıkma yedek parça, sandık motor ve mekanik tedarik merkezi. türkiye'nin her yerine kargo imkanı.">
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f8f9fa; }
-        header { background-color: #003366; color: white; padding: 30px 20px; text-align: center; }
-        header h1 { margin: 0 0 15px 0; font-size: 28px; text-transform: lowercase; }
-        .search-container { max-width: 600px; margin: 0 auto; display: flex; gap: 10px; }
-        .search-container input { flex: 1; padding: 12px; border: none; border-radius: 4px; font-size: 16px; }
-        .search-container button { padding: 12px 25px; background-color: #ff8c00; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold; }
-        .content { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 25px; }
-        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left; border: 1px solid #eee; display: flex; flex-direction: column; justify-content: space-between; }
-        .card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; background-color: #eaeaea; }
-        .card h3 { font-size: 18px; color: #333; margin-top: 0; margin-bottom: 10px; text-transform: lowercase; line-height: 1.4; }
-        .card p { font-size: 14px; color: #555; margin-bottom: 20px; line-height: 1.6; }
-        .contact-btn { display: block; width: 100%; padding: 12px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; text-align: center; margin-top: auto; }
-        footer { background-color: #222; color: #ccc; text-align: center; padding: 40px 20px; margin-top: 60px; line-height: 1.8; }
-        footer strong { color: white; font-size: 18px; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f6f9; color: #333; }
         
-        /* Mobil Uyumluluk */
+        /* Navbar ve Hero Alanı */
+        header { background-color: #002c5f; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
+        .navbar { max-width: 1200px; margin: 0 auto; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: white; font-size: 24px; font-weight: bold; text-decoration: none; text-transform: lowercase; }
+        .contact-top a { color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; background-color: #ff8c00; border-radius: 4px; }
+        
+        .hero { background-color: #003366; color: white; padding: 80px 20px; text-align: center; border-bottom: 5px solid #ff8c00; }
+        .hero h1 { margin: 0 0 20px 0; font-size: 36px; text-transform: lowercase; letter-spacing: 1px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px auto; color: #d1e0f0; line-height: 1.6; }
+        
+        /* Arama Kutusu */
+        .global-search { max-width: 800px; margin: -30px auto 40px auto; display: flex; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .global-search input { flex: 1; padding: 18px; border: none; font-size: 16px; border-radius: 4px 0 0 4px; outline: none; }
+        .global-search button { padding: 18px 40px; background-color: #28a745; color: white; border: none; border-radius: 0 4px 4px 0; font-size: 16px; cursor: pointer; font-weight: bold; transition: 0.3s; }
+        .global-search button:hover { background-color: #218838; }
+
+        /* Konteyner ve Genel Yapı */
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; min-height: 50vh; }
+        .section-title { font-size: 24px; color: #002c5f; margin-bottom: 30px; text-transform: lowercase; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        
+        /* Kategoriler */
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
+        .cat-card { background: white; padding: 30px 20px; border-radius: 8px; text-align: center; cursor: pointer; border: 1px solid #e0e0e0; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.02); font-size: 18px; font-weight: bold; color: #444; }
+        .cat-card:hover { transform: translateY(-5px); border-color: #002c5f; color: #002c5f; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+        
+        /* Ürün Listesi */
+        .back-btn { background-color: #6c757d; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; margin-bottom: 20px; font-size: 14px; display: inline-block; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
+        .card img { width: 100%; height: 220px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; background-color: #eaeaea; }
+        .card h3 { font-size: 16px; color: #002c5f; margin: 0 0 10px 0; line-height: 1.4; text-transform: lowercase; }
+        .card p { font-size: 13px; color: #666; margin-bottom: 20px; line-height: 1.5; }
+        .contact-btn { display: block; width: 100%; padding: 12px 0; background-color: #002c5f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; text-align: center; margin-top: auto; transition: 0.3s; }
+        .contact-btn:hover { background-color: #ff8c00; }
+
+        footer { background-color: #111; color: #aaa; text-align: center; padding: 50px 20px; margin-top: 40px; line-height: 1.8; font-size: 14px; }
+        footer strong { color: white; font-size: 18px; display: block; margin-bottom: 10px; }
+        
         @media (max-width: 768px) {
-            .search-container { flex-direction: column; }
-            .grid { grid-template-columns: 1fr; }
+            .global-search { flex-direction: column; margin-top: 20px; box-shadow: none; }
+            .global-search input { border-radius: 4px; margin-bottom: 10px; }
+            .global-search button { border-radius: 4px; }
+            .hero { padding: 40px 20px; }
+            .hero h1 { font-size: 26px; }
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>cihat hyundai accent blue yedek parça</h1>
-    <div class="search-container">
-        <input type="text" id="searchInput" placeholder="parça adı ara (örneğin: bagaj kapağı, far, radyatör)...">
-        <button onclick="parcaAra()">ara</button>
+    <div class="navbar">
+        <a href="#" class="logo" onclick="anaSayfayaDon()">cihat hyundai</a>
+        <div class="contact-top">
+            <a href="tel:05537383806">0553 738 38 06</a>
+        </div>
     </div>
 </header>
 
-<div class="content">
-    <div class="grid" id="parcaListesi">
-        <!-- ürünler buraya yüklenecek -->
+<section class="hero">
+    <h1>cihat hyundai ostim çıkma parça ve motor</h1>
+    <p>hyundai ve kia marka araçlar için garantili sandık motor, mekanik ve kaporta yedek parçaları. doğrudan ostim depomuzdan türkiye'nin her yerine aynı gün sevkiyat.</p>
+</section>
+
+<div class="global-search">
+    <input type="text" id="searchInput" placeholder="stok kodumuzda parça adı veya araç modeli ara...">
+    <button onclick="genelAra()">stoklarda ara</button>
+</div>
+
+<div class="container" id="main-container">
+    
+    <!-- Kategori Görünümü -->
+    <div id="category-view">
+        <h2 class="section-title">araç modelleri</h2>
+        <div class="category-grid">
+            <div class="cat-card" onclick="kategoriGoster('accent blue')">hyundai accent blue</div>
+            <div class="cat-card" onclick="kategoriGoster('accent era')">hyundai accent era</div>
+            <div class="cat-card" onclick="kategoriGoster('i20')">hyundai i20</div>
+            <div class="cat-card" onclick="kategoriGoster('i30')">hyundai i30</div>
+            <div class="cat-card" onclick="kategoriGoster('tucson')">hyundai tucson</div>
+            <div class="cat-card" onclick="kategoriGoster('kia ceed')">kia ceed</div>
+            <div class="cat-card" onclick="kategoriGoster('kia rio')">kia rio</div>
+            <div class="cat-card" onclick="kategoriGoster('kia sportage')">kia sportage</div>
+        </div>
     </div>
+
+    <!-- Ürün Görünümü -->
+    <div id="product-view" style="display: none;">
+        <button class="back-btn" onclick="anaSayfayaDon()">modeller sayfasına dön</button>
+        <h2 class="section-title" id="aktif-kategori-baslik">tüm yedek parçalar</h2>
+        <div class="grid" id="parcaListesi"></div>
+    </div>
+
 </div>
 
 <footer>
-    <strong>cihat hyundai</strong><br>
+    <strong>cihat hyundai çıkma parça</strong>
     0553 738 38 06 | 0534 844 18 61<br>
     Serhat Mah. 1126. Cad. No: 14 Yenimahalle/Ankara (ostim bölgesi)<br>
-    türkiye'nin her yerine yedek parça gönderimi
+    sadece motor ve yedek parça satışı yapılmaktadır. komple araç satışımız yoktur.
 </footer>
 
 <script>
-    // seo uyumlu farklı açıklama şablonları (kopya içerik cezasını önler, türkiye geneli vurgusu yapar)
     const seoSablonlari = [
         "stoklarımızda yer alan {baslik} için ankara ostim merkezli depomuzdan türkiye'nin her yerine hızlı kargo sağlıyoruz. aracınızın mekanik ve kaporta aksamına tam uyumlu bu yedek parça güvenle tedarik edilmektedir.",
-        "accent blue {baslik} arayışınızda doğrudan stoktan teslimat yapıyoruz. tüm şehirlere gönderim imkanıyla sunduğumuz bu parça, aracınızın performansını korumak için sorunsuz olarak satışa sunulmuştur.",
-        "hyundai uyumlu {baslik} siparişleriniz özenle paketlenip kargoya teslim edilmektedir. ostim çıkışlı yedek parça hizmetimiz ile nerede olursanız olun kaporta ve motor parçalarına kolayca ulaşabilirsiniz.",
-        "aracınız için gerekli olan {baslik} doğrudan mağazamızdan tedarik edilebilir. sıfır sandık motor, mekanik ve dış aksam parçalarımız türkiye geneli kesintisiz hizmet anlayışıyla gönderilmektedir.",
-        "gerekli kontrollerden geçmiş {baslik} satışa hazırdır. yedek parça ihtiyaçlarınızda ostim güvencesiyle arabanızın yola hızla dönmesi için tüm illere aynı gün kargo imkanı sunuyoruz."
+        "{baslik} arayışınızda doğrudan stoktan teslimat yapıyoruz. tüm şehirlere gönderim imkanıyla sunduğumuz bu parça, aracınızın performansını korumak için sorunsuz olarak satışa sunulmuştur.",
+        "uyumlu {baslik} siparişleriniz özenle paketlenip kargoya teslim edilmektedir. ostim çıkışlı yedek parça hizmetimiz ile nerede olursanız olun parçalara kolayca ulaşabilirsiniz."
     ];
 
-    // sisteme sadece fotoğraf adını ve parça adını küçük harflerle girmeniz yeterli
+    // veri tabanını artık kategori etiketleriyle yönetiyoruz
     const yedekParcalar = [
-        { resim: "accent-blue-bagaj-kapagi-cikma.JPEG", baslik: "hyundai accent blue çıkma bagaj kapağı" },
-        { resim: "accent-blue-debriyaj-pedali.JPEG", baslik: "hyundai accent blue debriyaj pedalı" },
-        { resim: "accent-blue-kaput-sifir.jpg", baslik: "hyundai accent blue sıfır kaput" },
-        { resim: "accent-blue-kalorifer-motoru.JPEG", baslik: "hyundai accent blue kalorifer motoru" },
-        { resim: "accent-blue-sol-on-kapi-sifir-orijinal.jpeg", baslik: "hyundai accent blue sol ön kapı sıfır" },
-        { resim: "hyundai-accent-blue-11-18-klima-radyatoru-1-6-crdi-brazing-512x376x16-aluminyum-oris-97606-1r300-cihat-hyundai.jpg", baslik: "hyundai accent blue 1.6 crdi klima radyatörü" },
-        { resim: "hyundai-accent-blue-11-18-arka-tampon-siyah-eurobump-866111r200-cihat-hyundai.jpg", baslik: "hyundai accent blue 2011-2018 arka tampon siyah" },
-        { resim: "hyundai-accent-blue-11-18-motor-besigi-komple-besik-tw-62400-1r000-cihat-hyundai.jpg", baslik: "hyundai accent blue komple motor beşiği" },
-        { resim: "hyundai-accent-blue-11-14-far-lambasi-sag-elektrikli-motorlu-beyaz-reflektorlu-ledsiz-h4-92102-1r040-cihat-hyundai.jpg", baslik: "hyundai accent blue 2011-2014 sağ far lambası" },
-        { resim: "hyundai-accent-blue-11-18-su-radyatoru-1-4-1-6-crdi-brazing-480x382x26-manuel-alm-oris-25310-1r300-cihat-hyundai.jpg", baslik: "hyundai accent blue 1.4 ve 1.6 crdi su radyatörü" }
+        // Accent Blue Parçaları (önceki listenizin tamamını kategori etiketiyle buraya ekleyebilirsiniz)
+        { kategori: "accent blue", resim: "accent-blue-bagaj-kapagi-cikma.JPEG", baslik: "hyundai accent blue çıkma bagaj kapağı" },
+        { kategori: "accent blue", resim: "accent-blue-debriyaj-pedali.JPEG", baslik: "hyundai accent blue debriyaj pedalı" },
+        { kategori: "accent blue", resim: "accent-blue-kaput-sifir.jpg", baslik: "hyundai accent blue sıfır kaput" },
+        { kategori: "accent blue", resim: "accent-blue-kalorifer-motoru.JPEG", baslik: "hyundai accent blue kalorifer motoru" },
+        { kategori: "accent blue", resim: "hyundai-accent-blue-11-18-arka-tampon-siyah-eurobump-866111r200-cihat-hyundai.jpg", baslik: "hyundai accent blue 11-18 siyah arka tampon" },
+        { kategori: "accent blue", resim: "hyundai-accent-blue-11-14-far-lambasi-sol-elektrikli-motorlu-beyaz-reflektorlu-ledsiz-h4-92101-1r040-cihat-hyundai.jpg", baslik: "hyundai accent blue 11-14 sol far lambası elektrikli" },
+        { kategori: "accent blue", resim: "hyundai-accent-blue-11-18-klima-radyatoru-1-6-crdi-brazing-512x376x16-aluminyum-oris-97606-1r300-cihat-hyundai.jpg", baslik: "hyundai accent blue 11-18 1.6 crdi klima radyatörü" },
+        
+        // Diğer modeller için örnek veri (siz elinizdeki resimlerle dolduracaksınız)
+        { kategori: "i20", resim: "i20-sandik-motor.jpg", baslik: "hyundai i20 1.4 mpi sandık motor" },
+        { kategori: "i20", resim: "i20-on-tampon.jpg", baslik: "hyundai i20 ön tampon" },
+        { kategori: "kia ceed", resim: "ceed-sanziman.jpg", baslik: "kia ceed otomatik şanzıman" }
     ];
 
     function seoMetniUret(baslik, index) {
-        // her ürüne farklı bir şablon atamak için matematiksel bir döngü
         const sablonIndex = index % seoSablonlari.length;
         let metin = seoSablonlari[sablonIndex];
-        return metin.replace("{baslik}", baslik);
+        return metin.replace(/{baslik}/g, baslik);
     }
 
-    function urunleriGoster(liste) {
+    function vitrinGuncelle(liste) {
         const konteyner = document.getElementById("parcaListesi");
         konteyner.innerHTML = "";
         
         if (liste.length === 0) {
-            konteyner.innerHTML = "<p style='grid-column: 1 / -1; text-align: center; color: #666; font-size: 18px;'>aradığınız parça bulunamadı, güncel stok bilgisi için lütfen arayınız.</p>";
+            konteyner.innerHTML = "<p style='grid-column: 1 / -1; padding: 40px; text-align: center; color: #666; font-size: 16px; background: #fff; border: 1px solid #ddd; border-radius: 8px;'>aradığınız parça kriterlere uygun bulunamadı, güncel stok bilgisi için lütfen arayınız.</p>";
             return;
         }
 
@@ -97,27 +153,49 @@
             const div = document.createElement("div");
             div.className = "card";
             div.innerHTML = `
-                <img src="${parca.resim}" alt="${parca.baslik}" onerror="this.src='https://via.placeholder.com/300x200?text=Gorsel+Hazirlaniyor'">
+                <img src="${parca.resim}" alt="${parca.baslik}" onerror="this.src='https://via.placeholder.com/300x220?text=gorsel+hazirlaniyor'">
                 <div>
                     <h3>${parca.baslik}</h3>
                     <p>${aciklama}</p>
                 </div>
-                <a href="tel:05537383806" class="contact-btn">hemen ara</a>
+                <a href="tel:05537383806" class="contact-btn">hemen ara: 0553 738 38 06</a>
             `;
             konteyner.appendChild(div);
         });
     }
 
-    function parcaAra() {
-        const kelime = document.getElementById("searchInput").value.toLowerCase();
-        const sonuclar = yedekParcalar.filter(p => 
-            p.baslik.includes(kelime) || p.resim.toLowerCase().includes(kelime)
-        );
-        urunleriGoster(sonuclar);
+    function kategoriGoster(kategoriAdi) {
+        document.getElementById("category-view").style.display = "none";
+        document.getElementById("product-view").style.display = "block";
+        document.getElementById("aktif-kategori-baslik").innerText = kategoriAdi + " yedek parçaları";
+        
+        const filtrelenmisListe = yedekParcalar.filter(p => p.kategori === kategoriAdi);
+        vitrinGuncelle(filtrelenmisListe);
     }
 
-    // sayfaya girildiğinde otomatik listele
-    urunleriGoster(yedekParcalar);
+    function anaSayfayaDon() {
+        document.getElementById("category-view").style.display = "block";
+        document.getElementById("product-view").style.display = "none";
+        document.getElementById("searchInput").value = "";
+    }
+
+    function genelAra() {
+        const kelime = document.getElementById("searchInput").value.toLowerCase();
+        
+        if(kelime.trim() === "") {
+            anaSayfayaDon();
+            return;
+        }
+
+        document.getElementById("category-view").style.display = "none";
+        document.getElementById("product-view").style.display = "block";
+        document.getElementById("aktif-kategori-baslik").innerText = "arama sonuçları: " + kelime;
+
+        const sonuclar = yedekParcalar.filter(p => 
+            p.baslik.includes(kelime) || p.kategori.includes(kelime)
+        );
+        vitrinGuncelle(sonuclar);
+    }
 </script>
 
 </body>
