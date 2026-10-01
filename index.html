@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyundai ve kia çıkma parça ve motor ostim - cihat hyundai</title>
+    <meta name="description" content="ostim hyundai ve kia çıkma motor, sıfır sandık motor ve mekanik yedek parça satış merkezi. araba satışı yoktur, sadece motor ve yedek parça tedariği.">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f8f9fa; }
+        header { background-color: #003366; color: white; padding: 30px 20px; text-align: center; }
+        header h1 { margin: 0 0 15px 0; font-size: 28px; }
+        .search-container { max-width: 600px; margin: 0 auto; display: flex; gap: 10px; }
+        .search-container input { flex: 1; padding: 12px; border: none; border-radius: 4px; font-size: 16px; }
+        .search-container button { padding: 12px 25px; background-color: #ff8c00; color: white; border: none; border-radius: 4px; font-size: 16px; cursor: pointer; font-weight: bold; }
+        .content { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: center; border: 1px solid #eee; }
+        .card h3 { font-size: 16px; color: #333; margin-bottom: 10px; }
+        .card p { font-size: 14px; color: #666; margin-bottom: 20px; }
+        .contact-btn { display: inline-block; width: 100%; padding: 12px 0; background-color: #28a745; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; }
+        footer { background-color: #222; color: #ccc; text-align: center; padding: 40px 20px; margin-top: 60px; line-height: 1.8; }
+        footer strong { color: white; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>cihat hyundai çıkma parça</h1>
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="parça adı, marka veya model ara...">
+        <button onclick="parcaAra()">ara</button>
+    </div>
+</header>
+
+<div class="content">
+    <div class="grid" id="parcaListesi">
+        <!-- javascript ile ürünler buraya yüklenecek -->
+    </div>
+</div>
+
+<footer>
+    <strong>cihat hyundai</strong><br>
+    0553 738 38 06 | 0534 844 18 61<br>
+    Serhat Mah. 1126. Cad. No: 14 Yenimahalle/Ankara (ostim bölgesi)
+</footer>
+
+<script>
+    const yedekParcalar = [
+        { id: 1, baslik: "hyundai accent era 1.5 crdi sandık motor", aciklama: "motor ve mekanik aksamlar" },
+        { id: 2, baslik: "kia ceed 1.6 crdi çıkma şanzıman", aciklama: "şanzıman ve aktarma organları" },
+        { id: 3, baslik: "hyundai i20 1.4 mpi silindir kapağı", aciklama: "motor üst kapak ve bileşenleri" },
+        { id: 4, baslik: "kia rio 1.4 crdi çıkma enjektör takımı", aciklama: "yakıt sistemi parçaları" }
+    ];
+
+    function urunleriGoster(liste) {
+        const konteyner = document.getElementById("parcaListesi");
+        konteyner.innerHTML = "";
+        
+        if (liste.length === 0) {
+            konteyner.innerHTML = "<p style='grid-column: 1 / -1; text-align: center; color: #666;'>aradığınız parça bulunamadı, stok bilgisi için lütfen arayınız.</p>";
+            return;
+        }
+
+        liste.forEach(parca => {
+            const div = document.createElement("div");
+            div.className = "card";
+            div.innerHTML = `
+                <h3>${parca.baslik}</h3>
+                <p>${parca.aciklama}</p>
+                <a href="tel:05537383806" class="contact-btn">hemen ara</a>
+            `;
+            konteyner.appendChild(div);
+        });
+    }
+
+    function parcaAra() {
+        const kelime = document.getElementById("searchInput").value.toLowerCase();
+        const sonuclar = yedekParcalar.filter(p => 
+            p.baslik.includes(kelime) || p.aciklama.includes(kelime)
+        );
+        urunleriGoster(sonuclar);
+    }
+
+    urunleriGoster(yedekParcalar);
+</script>
+
+</body>
+</html>
