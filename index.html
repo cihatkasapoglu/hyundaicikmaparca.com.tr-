@@ -3,55 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cihat hyundai çıkma parça - ostim sandık motor ve mekanik yedek parça</title>
-    <meta name="description" content="ankara ostim merkezli hyundai ve kia çıkma yedek parça, sandık motor ve mekanik tedarik merkezi. türkiye'nin her yerine kargo imkanı.">
+    <title>cihat hyundai çıkma parça - ostim sandık motor ve yedek parça</title>
+    <meta name="description" content="ankara ostim merkezli hyundai ve kia çıkma yedek parça, sandık motor ve mekanik tedarik merkezi. türkiye'nin her yerine aynı gün sevkiyat.">
+    
+    <!-- modern fontlar ve ikonlar -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; background-color: #f4f6f9; color: #333; }
+        body { font-family: 'Montserrat', sans-serif; margin: 0; background-color: #f0f2f5; color: #2c3e50; }
         
-        /* Navbar ve Hero Alanı */
-        header { background-color: #002c5f; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 100; }
-        .navbar { max-width: 1200px; margin: 0 auto; padding: 20px; display: flex; justify-content: space-between; align-items: center; }
-        .logo { color: white; font-size: 24px; font-weight: bold; text-decoration: none; text-transform: lowercase; }
-        .contact-top a { color: white; text-decoration: none; font-weight: bold; padding: 10px 20px; background-color: #ff8c00; border-radius: 4px; }
+        /* üst menü */
+        header { background-color: #ffffff; position: sticky; top: 0; z-index: 100; box-shadow: 0 4px 20px rgba(0,0,0,0.05); }
+        .navbar { max-width: 1200px; margin: 0 auto; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #002c5f; font-size: 26px; font-weight: 800; text-decoration: none; text-transform: lowercase; letter-spacing: -1px; display: flex; align-items: center; gap: 10px; }
+        .logo i { color: #ff8c00; font-size: 28px; }
+        .contact-top a { color: #ffffff; text-decoration: none; font-weight: 600; padding: 12px 24px; background: linear-gradient(135deg, #ff8c00, #e67e00); border-radius: 8px; box-shadow: 0 4px 15px rgba(255, 140, 0, 0.3); transition: transform 0.2s; display: inline-block; }
+        .contact-top a:hover { transform: translateY(-2px); }
         
-        .hero { background-color: #003366; color: white; padding: 80px 20px; text-align: center; border-bottom: 5px solid #ff8c00; }
-        .hero h1 { margin: 0 0 20px 0; font-size: 36px; text-transform: lowercase; letter-spacing: 1px; }
-        .hero p { font-size: 18px; max-width: 700px; margin: 0 auto 30px auto; color: #d1e0f0; line-height: 1.6; }
+        /* gösterişli hero alanı */
+        .hero { background: linear-gradient(135deg, rgba(0, 44, 95, 0.95), rgba(0, 20, 50, 0.95)), url('https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&q=80&w=1920') center/cover; color: white; padding: 100px 20px 120px 20px; text-align: center; border-bottom: 6px solid #ff8c00; }
+        .hero h1 { margin: 0 0 25px 0; font-size: 42px; text-transform: lowercase; font-weight: 800; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
+        .hero p { font-size: 20px; max-width: 800px; margin: 0 auto; color: #e0e6ed; line-height: 1.7; font-weight: 400; }
         
-        /* Arama Kutusu */
-        .global-search { max-width: 800px; margin: -30px auto 40px auto; display: flex; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .global-search input { flex: 1; padding: 18px; border: none; font-size: 16px; border-radius: 4px 0 0 4px; outline: none; }
-        .global-search button { padding: 18px 40px; background-color: #28a745; color: white; border: none; border-radius: 0 4px 4px 0; font-size: 16px; cursor: pointer; font-weight: bold; transition: 0.3s; }
-        .global-search button:hover { background-color: #218838; }
+        /* arama kutusu */
+        .global-search { max-width: 800px; margin: -40px auto 50px auto; display: flex; box-shadow: 0 15px 35px rgba(0,0,0,0.15); border-radius: 12px; background: #fff; padding: 10px; position: relative; z-index: 10; }
+        .global-search i { position: absolute; left: 30px; top: 50%; transform: translateY(-50%); color: #95a5a6; font-size: 20px; }
+        .global-search input { flex: 1; padding: 20px 20px 20px 60px; border: none; font-size: 18px; border-radius: 8px; outline: none; font-family: inherit; background: transparent; }
+        .global-search button { padding: 0 45px; background: linear-gradient(135deg, #002c5f, #001a38); color: white; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; font-weight: 600; font-family: inherit; transition: opacity 0.2s; }
+        .global-search button:hover { opacity: 0.9; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px 60px 20px; min-height: 50vh; }
+        .section-title { font-size: 28px; color: #002c5f; margin-bottom: 40px; text-transform: lowercase; font-weight: 800; text-align: center; position: relative; padding-bottom: 15px; }
+        .section-title::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 80px; height: 4px; background-color: #ff8c00; border-radius: 2px; }
+        
+        /* ikonlu kategoriler */
+        .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 25px; }
+        .cat-card { background: white; padding: 40px 20px; border-radius: 12px; text-align: center; cursor: pointer; box-shadow: 0 5px 15px rgba(0,0,0,0.04); transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); border: 2px solid transparent; display: flex; flex-direction: column; align-items: center; gap: 15px; }
+        .cat-card i { font-size: 45px; color: #002c5f; transition: transform 0.3s; }
+        .cat-card span { font-size: 18px; font-weight: 700; color: #2c3e50; text-transform: lowercase; }
+        .cat-card:hover { transform: translateY(-8px); border-color: #ff8c00; box-shadow: 0 15px 30px rgba(255, 140, 0, 0.1); }
+        .cat-card:hover i { transform: scale(1.1); color: #ff8c00; }
+        
+        /* dolgun ürün kartları */
+        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.06); display: flex; flex-direction: column; overflow: hidden; border: 1px solid #f0f0f0; transition: transform 0.2s; }
+        .card:hover { transform: translateY(-5px); }
+        .card-img-wrapper { position: relative; }
+        .card img { width: 100%; height: 240px; object-fit: cover; background-color: #f8f9fa; display: block; }
+        
+        /* ürün rozetleri */
+        .badges { position: absolute; top: 15px; left: 15px; display: flex; flex-direction: column; gap: 8px; }
+        .badge { background: rgba(0, 44, 95, 0.9); color: white; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 600; text-transform: lowercase; letter-spacing: 0.5px; backdrop-filter: blur(4px); }
+        .badge.orange { background: rgba(255, 140, 0, 0.9); }
+        
+        .card-content { padding: 25px 20px; flex: 1; display: flex; flex-direction: column; }
+        .card h3 { font-size: 18px; color: #002c5f; margin: 0 0 12px 0; text-transform: lowercase; font-weight: 700; line-height: 1.4; }
+        .card p { font-size: 14px; color: #555; margin-bottom: 25px; line-height: 1.6; }
+        
+        .button-group { display: flex; gap: 12px; margin-top: auto; }
+        .call-btn, .wa-btn { flex: 1; padding: 14px 0; text-decoration: none; border-radius: 8px; font-weight: 700; text-align: center; display: flex; align-items: center; justify-content: center; gap: 8px; transition: opacity 0.2s; font-size: 14px; }
+        .call-btn { background-color: #002c5f; color: white; }
+        .wa-btn { background-color: #25d366; color: white; }
+        .call-btn:hover, .wa-btn:hover { opacity: 0.9; }
 
-        /* Konteyner ve Genel Yapı */
-        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; min-height: 50vh; }
-        .section-title { font-size: 24px; color: #002c5f; margin-bottom: 30px; text-transform: lowercase; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
-        
-        /* Kategoriler */
-        .category-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; }
-        .cat-card { background: white; padding: 30px 20px; border-radius: 8px; text-align: center; cursor: pointer; border: 1px solid #e0e0e0; transition: all 0.3s ease; box-shadow: 0 2px 5px rgba(0,0,0,0.02); font-size: 18px; font-weight: bold; color: #444; }
-        .cat-card:hover { transform: translateY(-5px); border-color: #002c5f; color: #002c5f; box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
-        
-        /* Ürün Listesi */
-        .back-btn { background-color: #6c757d; color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; margin-bottom: 20px; font-size: 14px; display: inline-block; }
-        .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 25px; }
-        .card { background: white; padding: 15px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); border: 1px solid #eee; display: flex; flex-direction: column; }
-        .card img { width: 100%; height: 220px; object-fit: cover; border-radius: 4px; margin-bottom: 15px; background-color: #eaeaea; }
-        .card h3 { font-size: 16px; color: #002c5f; margin: 0 0 10px 0; line-height: 1.4; text-transform: lowercase; }
-        .card p { font-size: 13px; color: #666; margin-bottom: 20px; line-height: 1.5; }
-        .contact-btn { display: block; width: 100%; padding: 12px 0; background-color: #002c5f; color: white; text-decoration: none; border-radius: 4px; font-weight: bold; text-align: center; margin-top: auto; transition: 0.3s; }
-        .contact-btn:hover { background-color: #ff8c00; }
+        .back-btn { background: #002c5f; color: white; border: none; padding: 12px 25px; border-radius: 8px; cursor: pointer; margin-bottom: 30px; font-size: 15px; display: inline-flex; align-items: center; gap: 10px; font-family: inherit; font-weight: 600; transition: background 0.2s; }
+        .back-btn:hover { background: #ff8c00; }
 
-        footer { background-color: #111; color: #aaa; text-align: center; padding: 50px 20px; margin-top: 40px; line-height: 1.8; font-size: 14px; }
-        footer strong { color: white; font-size: 18px; display: block; margin-bottom: 10px; }
+        .float-wa { position: fixed; bottom: 30px; right: 30px; background-color: #25d366; color: white; padding: 15px 25px; border-radius: 50px; text-decoration: none; font-weight: 700; box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4); z-index: 999; display: flex; align-items: center; gap: 10px; font-size: 16px; transition: transform 0.2s; }
+        .float-wa:hover { transform: scale(1.05); }
+        
+        footer { background-color: #00152e; color: #8a9bb0; text-align: center; padding: 60px 20px; line-height: 1.8; font-size: 15px; }
+        footer strong { color: white; font-size: 20px; display: block; margin-bottom: 15px; font-weight: 800; }
         
         @media (max-width: 768px) {
-            .global-search { flex-direction: column; margin-top: 20px; box-shadow: none; }
-            .global-search input { border-radius: 4px; margin-bottom: 10px; }
-            .global-search button { border-radius: 4px; }
-            .hero { padding: 40px 20px; }
-            .hero h1 { font-size: 26px; }
+            .hero { padding: 60px 20px 80px 20px; }
+            .hero h1 { font-size: 28px; }
+            .global-search { flex-direction: column; margin: -30px 20px 40px 20px; padding: 15px; }
+            .global-search i { top: 38px; }
+            .global-search input { padding: 15px 15px 15px 50px; }
+            .global-search button { padding: 15px; margin-top: 10px; }
+            .button-group { flex-direction: column; }
+            .float-wa { bottom: 20px; right: 20px; padding: 12px 20px; font-size: 14px; }
         }
     </style>
 </head>
@@ -59,78 +92,93 @@
 
 <header>
     <div class="navbar">
-        <a href="#" class="logo" onclick="anaSayfayaDon()">cihat hyundai</a>
+        <a href="#" class="logo" onclick="anaSayfayaDon()">
+            <i class="fa-solid fa-gear"></i> cihat hyundai
+        </a>
         <div class="contact-top">
-            <a href="tel:05537383806">0553 738 38 06</a>
+            <a href="tel:05537383806"><i class="fa-solid fa-phone"></i> 0553 738 38 06</a>
         </div>
     </div>
 </header>
 
 <section class="hero">
-    <h1>cihat hyundai ostim çıkma parça ve motor</h1>
-    <p>hyundai ve kia marka araçlar için garantili sandık motor, mekanik ve kaporta yedek parçaları. doğrudan ostim depomuzdan türkiye'nin her yerine aynı gün sevkiyat.</p>
+    <h1>ostim çıkma parça ve sandık motor</h1>
+    <p>hyundai ve kia marka araçlar için garantili mekanik yedek parçalar. doğrudan deponuzdan, aracınıza tam uyumlu çözümler.</p>
 </section>
 
 <div class="global-search">
-    <input type="text" id="searchInput" placeholder="stok kodumuzda parça adı veya araç modeli ara...">
-    <button onclick="genelAra()">stoklarda ara</button>
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <input type="text" id="searchInput" placeholder="parça adı veya model ara...">
+    <button onclick="genelAra()">stok sorgula</button>
 </div>
 
 <div class="container" id="main-container">
     
-    <!-- Kategori Görünümü -->
     <div id="category-view">
         <h2 class="section-title">araç modelleri</h2>
         <div class="category-grid">
-            <div class="cat-card" onclick="kategoriGoster('accent blue')">hyundai accent blue</div>
-            <div class="cat-card" onclick="kategoriGoster('accent era')">hyundai accent era</div>
-            <div class="cat-card" onclick="kategoriGoster('i20')">hyundai i20</div>
-            <div class="cat-card" onclick="kategoriGoster('i30')">hyundai i30</div>
-            <div class="cat-card" onclick="kategoriGoster('tucson')">hyundai tucson</div>
-            <div class="cat-card" onclick="kategoriGoster('kia ceed')">kia ceed</div>
-            <div class="cat-card" onclick="kategoriGoster('kia rio')">kia rio</div>
-            <div class="cat-card" onclick="kategoriGoster('kia sportage')">kia sportage</div>
+            <div class="cat-card" onclick="kategoriGoster('accent blue')">
+                <i class="fa-solid fa-car"></i>
+                <span>hyundai accent blue</span>
+            </div>
+            <div class="cat-card" onclick="kategoriGoster('accent era')">
+                <i class="fa-solid fa-car-side"></i>
+                <span>hyundai accent era</span>
+            </div>
+            <div class="cat-card" onclick="kategoriGoster('i20')">
+                <i class="fa-solid fa-car"></i>
+                <span>hyundai i20</span>
+            </div>
+            <div class="cat-card" onclick="kategoriGoster('i30')">
+                <i class="fa-solid fa-car-side"></i>
+                <span>hyundai i30</span>
+            </div>
+            <div class="cat-card" onclick="kategoriGoster('tucson')">
+                <i class="fa-solid fa-truck-pickup"></i>
+                <span>hyundai tucson</span>
+            </div>
+            <div class="cat-card" onclick="kategoriGoster('kia ceed')">
+                <i class="fa-solid fa-car"></i>
+                <span>kia ceed</span>
+            </div>
+            <div class="cat-card" onclick="kategoriGoster('kia rio')">
+                <i class="fa-solid fa-car-side"></i>
+                <span>kia rio</span>
+            </div>
+            <div class="cat-card" onclick="kategoriGoster('kia sportage')">
+                <i class="fa-solid fa-truck-pickup"></i>
+                <span>kia sportage</span>
+            </div>
         </div>
     </div>
 
-    <!-- Ürün Görünümü -->
     <div id="product-view" style="display: none;">
-        <button class="back-btn" onclick="anaSayfayaDon()">modeller sayfasına dön</button>
-        <h2 class="section-title" id="aktif-kategori-baslik">tüm yedek parçalar</h2>
+        <button class="back-btn" onclick="anaSayfayaDon()">
+            <i class="fa-solid fa-arrow-left"></i> modellere dön
+        </button>
+        <h2 class="section-title" id="aktif-kategori-baslik">yedek parçalar</h2>
         <div class="grid" id="parcaListesi"></div>
     </div>
-
 </div>
+
+<a href="https://wa.me/905537383806?text=merhaba,%20yedek%20parçalarınız%20hakkında%20bilgi%20almak%20istiyorum." class="float-wa" target="_blank">
+    <i class="fa-brands fa-whatsapp"></i> whatsapp sipariş
+</a>
 
 <footer>
     <strong>cihat hyundai çıkma parça</strong>
     0553 738 38 06 | 0534 844 18 61<br>
-    Serhat Mah. 1126. Cad. No: 14 Yenimahalle/Ankara (ostim bölgesi)<br>
+    serhat mah. 1126. cad. no: 14 yenimahalle/ankara (ostim bölgesi)<br>
     sadece motor ve yedek parça satışı yapılmaktadır. komple araç satışımız yoktur.
 </footer>
 
+<script src="data.js"></script>
+
 <script>
     const seoSablonlari = [
-        "stoklarımızda yer alan {baslik} için ankara ostim merkezli depomuzdan türkiye'nin her yerine hızlı kargo sağlıyoruz. aracınızın mekanik ve kaporta aksamına tam uyumlu bu yedek parça güvenle tedarik edilmektedir.",
-        "{baslik} arayışınızda doğrudan stoktan teslimat yapıyoruz. tüm şehirlere gönderim imkanıyla sunduğumuz bu parça, aracınızın performansını korumak için sorunsuz olarak satışa sunulmuştur.",
-        "uyumlu {baslik} siparişleriniz özenle paketlenip kargoya teslim edilmektedir. ostim çıkışlı yedek parça hizmetimiz ile nerede olursanız olun parçalara kolayca ulaşabilirsiniz."
-    ];
-
-    // veri tabanını artık kategori etiketleriyle yönetiyoruz
-    const yedekParcalar = [
-        // Accent Blue Parçaları (önceki listenizin tamamını kategori etiketiyle buraya ekleyebilirsiniz)
-        { kategori: "accent blue", resim: "accent-blue-bagaj-kapagi-cikma.JPEG", baslik: "hyundai accent blue çıkma bagaj kapağı" },
-        { kategori: "accent blue", resim: "accent-blue-debriyaj-pedali.JPEG", baslik: "hyundai accent blue debriyaj pedalı" },
-        { kategori: "accent blue", resim: "accent-blue-kaput-sifir.jpg", baslik: "hyundai accent blue sıfır kaput" },
-        { kategori: "accent blue", resim: "accent-blue-kalorifer-motoru.JPEG", baslik: "hyundai accent blue kalorifer motoru" },
-        { kategori: "accent blue", resim: "hyundai-accent-blue-11-18-arka-tampon-siyah-eurobump-866111r200-cihat-hyundai.jpg", baslik: "hyundai accent blue 11-18 siyah arka tampon" },
-        { kategori: "accent blue", resim: "hyundai-accent-blue-11-14-far-lambasi-sol-elektrikli-motorlu-beyaz-reflektorlu-ledsiz-h4-92101-1r040-cihat-hyundai.jpg", baslik: "hyundai accent blue 11-14 sol far lambası elektrikli" },
-        { kategori: "accent blue", resim: "hyundai-accent-blue-11-18-klima-radyatoru-1-6-crdi-brazing-512x376x16-aluminyum-oris-97606-1r300-cihat-hyundai.jpg", baslik: "hyundai accent blue 11-18 1.6 crdi klima radyatörü" },
-        
-        // Diğer modeller için örnek veri (siz elinizdeki resimlerle dolduracaksınız)
-        { kategori: "i20", resim: "i20-sandik-motor.jpg", baslik: "hyundai i20 1.4 mpi sandık motor" },
-        { kategori: "i20", resim: "i20-on-tampon.jpg", baslik: "hyundai i20 ön tampon" },
-        { kategori: "kia ceed", resim: "ceed-sanziman.jpg", baslik: "kia ceed otomatik şanzıman" }
+        "stoklarımızda yer alan {baslik} için ankara ostim merkezli depomuzdan hızlı kargo sağlıyoruz. mekanik aksama tam uyumlu yedek parça.",
+        "{baslik} arayışınızda doğrudan stoktan teslimat yapıyoruz. sorunsuz gönderim imkanıyla sunduğumuz parça satışa hazırdır.",
+        "uyumlu {baslik} siparişleriniz özenle kargoya teslim edilmektedir. ostim çıkışlı güvenilir yedek parça hizmeti."
     ];
 
     function seoMetniUret(baslik, index) {
@@ -144,21 +192,32 @@
         konteyner.innerHTML = "";
         
         if (liste.length === 0) {
-            konteyner.innerHTML = "<p style='grid-column: 1 / -1; padding: 40px; text-align: center; color: #666; font-size: 16px; background: #fff; border: 1px solid #ddd; border-radius: 8px;'>aradığınız parça kriterlere uygun bulunamadı, güncel stok bilgisi için lütfen arayınız.</p>";
+            konteyner.innerHTML = "<div style='grid-column: 1 / -1; padding: 60px 20px; text-align: center; background: white; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.05);'><i class='fa-solid fa-box-open' style='font-size: 50px; color: #ccc; margin-bottom: 20px;'></i><h3 style='color: #002c5f; font-size: 20px; margin:0 0 10px 0;'>parça bulunamadı</h3><p style='color: #666; margin:0;'>aradığınız kriterlere uygun parça listelenemedi, detaylı stok bilgisi için lütfen arayınız.</p></div>";
             return;
         }
 
         liste.forEach((parca, index) => {
             const aciklama = seoMetniUret(parca.baslik, index);
+            const waMesaj = encodeURIComponent(`merhaba, ${parca.baslik} için stok ve fiyat bilgisi alabilir miyim?`);
+            
             const div = document.createElement("div");
             div.className = "card";
             div.innerHTML = `
-                <img src="${parca.resim}" alt="${parca.baslik}" onerror="this.src='https://via.placeholder.com/300x220?text=gorsel+hazirlaniyor'">
-                <div>
+                <div class="card-img-wrapper">
+                    <img src="${parca.resim}" alt="${parca.baslik}" loading="lazy" onerror="this.src='https://via.placeholder.com/400x300?text=gorsel+hazirlaniyor'">
+                    <div class="badges">
+                        <span class="badge">ostim depo</span>
+                        <span class="badge orange">hızlı kargo</span>
+                    </div>
+                </div>
+                <div class="card-content">
                     <h3>${parca.baslik}</h3>
                     <p>${aciklama}</p>
+                    <div class="button-group">
+                        <a href="tel:05537383806" class="call-btn"><i class="fa-solid fa-phone"></i> ara</a>
+                        <a href="https://wa.me/905537383806?text=${waMesaj}" class="wa-btn" target="_blank"><i class="fa-brands fa-whatsapp"></i> whatsapp</a>
+                    </div>
                 </div>
-                <a href="tel:05537383806" class="contact-btn">hemen ara: 0553 738 38 06</a>
             `;
             konteyner.appendChild(div);
         });
